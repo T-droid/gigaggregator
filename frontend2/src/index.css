@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GigScraper Design System - All colors MUST be HSL */
+
+@layer base {
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 222 13% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 13% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 13% 11%;
+
+    /* Brand Blues */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 217 91% 55%;
+
+    /* Platform Accent Colors */
+    --reddit: 16 100% 55%;
+    --discord: 262 83% 58%;
+    --twitter: 203 89% 53%;
+    --facebook: 221 83% 53%;
+
+    /* Neutral System */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 9% 46%;
+
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 9% 46%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-hover)) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-card-hover: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    --sidebar-background: 220 13% 97%;
+    --sidebar-foreground: 220 13% 11%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 14% 94%;
+    --sidebar-accent-foreground: 220 13% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    --background: 222 13% 6%;
+    --foreground: 220 9% 95%;
+
+    --card: 222 13% 8%;
+    --card-foreground: 220 9% 95%;
+
+    --popover: 222 13% 8%;
+    --popover-foreground: 220 9% 95%;
+
+    /* Brand Blues - Dark Mode */
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 13% 6%;
+    --primary-hover: 217 91% 70%;
+
+    /* Platform Accents - Dark Mode */
+    --reddit: 16 100% 60%;
+    --discord: 262 83% 63%;
+    --twitter: 203 89% 58%;
+    --facebook: 221 83% 58%;
+
+    /* Neutral System - Dark Mode */
+    --secondary: 222 13% 12%;
+    --secondary-foreground: 220 9% 70%;
+
+    --muted: 222 13% 10%;
+    --muted-foreground: 220 9% 60%;
+
+    --accent: 222 13% 12%;
+    --accent-foreground: 220 9% 70%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 222 13% 15%;
+    --input: 222 13% 15%;
+    --ring: 217 91% 65%;
+
+    --sidebar-background: 222 13% 4%;
+    --sidebar-foreground: 220 9% 90%;
+    --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 222 13% 6%;
+    --sidebar-accent: 222 13% 10%;
+    --sidebar-accent-foreground: 220 9% 90%;
+    --sidebar-border: 222 13% 12%;
+    --sidebar-ring: 217 91% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
